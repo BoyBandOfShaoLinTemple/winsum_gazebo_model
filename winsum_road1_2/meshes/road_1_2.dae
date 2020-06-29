@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.83.0 commit date:2020-06-03, commit time:14:38, hash:211b6c29f771</authoring_tool>
+    </contributor>
+    <created>2020-06-26T17:47:41</created>
+    <modified>2020-06-26T17:47:41</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="World_ap_020-effect">
+      <profile_COMMON>
+        <newparam sid="Palette_jpg_018-surface">
+          <surface type="2D">
+            <init_from>Palette_jpg_018</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Palette_jpg_018-sampler">
+          <sampler2D>
+            <source>Palette_jpg_018-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Palette_jpg_018-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="World_ap_014-effect">
+      <profile_COMMON>
+        <newparam sid="Palette_jpg_003-surface">
+          <surface type="2D">
+            <init_from>Palette_jpg_003</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Palette_jpg_003-sampler">
+          <sampler2D>
+            <source>Palette_jpg_003-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Palette_jpg_003-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Palette_jpg_003" name="Palette_jpg_003">
+      <init_from>Palette.jpg</init_from>
+    </image>
+    <image id="Palette_jpg_018" name="Palette_jpg_018">
+      <init_from>Palette.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="World_ap_020-material" name="World ap.020">
+      <instance_effect url="#World_ap_020-effect"/>
+    </material>
+    <material id="World_ap_014-material" name="World ap.014">
+      <instance_effect url="#World_ap_014-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ROAD_Lines_139-mesh" name="ROAD.Lines.139">
+      <mesh>
+        <source id="ROAD_Lines_139-mesh-positions">
+          <float_array id="ROAD_Lines_139-mesh-positions-array" count="72">41.62534 0 14.31564 41.62534 0 8.479767 127.5144 0 14.31564 127.5144 0 8.479767 257.4149 0 8.53337 247.3285 0 8.53337 257.4149 2.00336e-7 -62.50934 247.3285 2.00336e-7 -62.50934 171.5408 0 14.31563 171.5408 0 8.479752 257.4299 0 14.31563 257.4299 0 8.479752 -227.1192 0 14.31564 -227.1192 0 8.479767 -141.2301 0 14.31564 -141.2301 0 8.479767 -360.9384 0 14.31566 -360.9384 0 8.479784 -275.0493 0 14.31566 -275.0493 0 8.479784 -92.19391 0 14.31564 -92.19391 0 8.479767 -6.304821 0 14.31564 -6.304821 0 8.479767</float_array>
+          <technique_common>
+            <accessor source="#ROAD_Lines_139-mesh-positions-array" count="24" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROAD_Lines_139-mesh-normals">
+          <float_array id="ROAD_Lines_139-mesh-normals-array" count="21">0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#ROAD_Lines_139-mesh-normals-array" count="7" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROAD_Lines_139-mesh-map-0">
+          <float_array id="ROAD_Lines_139-mesh-map-0-array" count="72">0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6291199 0.7999893 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199 0.7999893 -0.6191092 0.81 -0.6191092 0.81 -0.6291199</float_array>
+          <technique_common>
+            <accessor source="#ROAD_Lines_139-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROAD_Lines_139-mesh-vertices">
+          <input semantic="POSITION" source="#ROAD_Lines_139-mesh-positions"/>
+        </vertices>
+        <triangles material="World_ap_020-material" count="12">
+          <input semantic="VERTEX" source="#ROAD_Lines_139-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROAD_Lines_139-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROAD_Lines_139-mesh-map-0" offset="2" set="0"/>
+          <p>2 0 0 1 0 1 0 0 2 6 1 3 5 1 4 4 1 5 10 2 6 9 2 7 8 2 8 14 3 9 13 3 10 12 3 11 18 4 12 17 4 13 16 4 14 22 0 15 21 0 16 20 0 17 2 4 18 3 4 19 1 4 20 6 1 21 7 1 22 5 1 23 10 3 24 11 3 25 9 3 26 14 5 27 15 5 28 13 5 29 18 3 30 19 3 31 17 3 32 22 6 33 23 6 34 21 6 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="ROAD_008-mesh" name="ROAD.008">
+      <mesh>
+        <source id="ROAD_008-mesh-positions">
+          <float_array id="ROAD_008-mesh-positions-array" count="24">149.7593 -8.832211 -1095.976 149.7594 -8.832211 1095.976 -149.7593 -8.832211 1095.976 -149.7594 -8.832211 -1095.976 -149.7593 8.832211 1095.976 -149.7594 8.832211 -1095.976 149.7594 8.832211 1095.976 149.7593 8.832211 -1095.976</float_array>
+          <technique_common>
+            <accessor source="#ROAD_008-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROAD_008-mesh-normals">
+          <float_array id="ROAD_008-mesh-normals-array" count="27">0 -1 0 -1 0 0 0 1 0 1 0 0 7.38306e-7 0 1 -7.38306e-7 0 -1 0 -1 0 0 1 0 0 0 -1</float_array>
+          <technique_common>
+            <accessor source="#ROAD_008-mesh-normals-array" count="9" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROAD_008-mesh-map-0">
+          <float_array id="ROAD_008-mesh-map-0-array" count="72">0.8599893 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8931199 0.87 -0.8831092 0.87 -0.8931199 0.8599893 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8831092 0.87 -0.8831092 0.87 -0.8931199 0.8599893 -0.8831092 0.87 -0.8831092 0.87 -0.8931199 0.8599893 -0.8931199 0.8599893 -0.8831092 0.87 -0.8831092 0.8599893 -0.8831092 0.87 -0.8831092 0.87 -0.8931199 0.8599893 -0.8831092 0.87 -0.8831092 0.87 -0.8931199 0.8599893 -0.8831092 0.87 -0.8831092 0.87 -0.8931199</float_array>
+          <technique_common>
+            <accessor source="#ROAD_008-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROAD_008-mesh-vertices">
+          <input semantic="POSITION" source="#ROAD_008-mesh-positions"/>
+        </vertices>
+        <triangles material="World_ap_014-material" count="12">
+          <input semantic="VERTEX" source="#ROAD_008-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROAD_008-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROAD_008-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 3 0 1 0 0 2 2 1 3 5 1 4 3 1 5 5 2 6 6 2 7 7 2 8 6 3 9 0 3 10 7 3 11 6 4 12 2 4 13 1 4 14 0 5 15 5 5 16 7 5 17 1 6 18 2 6 19 3 6 20 2 1 21 4 1 22 5 1 23 5 7 24 4 7 25 6 7 26 6 3 27 1 3 28 0 3 29 6 4 30 4 4 31 2 4 32 0 8 33 3 8 34 5 8 35</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="road_line_2" name="road_line_2" type="NODE">
+        <matrix sid="transform">0.08076996 0 0 4.186995 0 -4.37114e-8 -0.06801035 0.741999 0 1 -2.97283e-9 0 0 0 0 1</matrix>
+        <instance_geometry url="#ROAD_Lines_139-mesh" name="road_line_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="World_ap_020-material" target="#World_ap_020-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="road_base_long" name="road_base_long" type="NODE">
+        <matrix sid="transform">1.34073e-5 -1.23727e-9 -0.02281072 2.74658e-6 -0.03338688 -4.96854e-13 -9.16016e-6 -2.28882e-6 0 0.02830548 -9.97088e-10 -0.2683182 0 0 0 1</matrix>
+        <instance_geometry url="#ROAD_008-mesh" name="road_base_long">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="World_ap_014-material" target="#World_ap_014-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.83.0 commit date:2020-06-03, commit time:14:38, hash:211b6c29f771</authoring_tool>
+    </contributor>
+    <created>2020-06-26T18:37:40</created>
+    <modified>2020-06-26T18:37:40</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_effects>
+    <effect id="World_ap_026-effect">
+      <profile_COMMON>
+        <newparam sid="Palette_jpg_017-surface">
+          <surface type="2D">
+            <init_from>Palette_jpg_017</init_from>
+          </surface>
+        </newparam>
+        <newparam sid="Palette_jpg_017-sampler">
+          <sampler2D>
+            <source>Palette_jpg_017-surface</source>
+          </sampler2D>
+        </newparam>
+        <technique sid="common">
+          <lambert>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <diffuse>
+              <texture texture="Palette_jpg_017-sampler" texcoord="UVMap"/>
+            </diffuse>
+            <index_of_refraction>
+              <float sid="ior">1.45</float>
+            </index_of_refraction>
+          </lambert>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_images>
+    <image id="Palette_jpg_017" name="Palette_jpg_017">
+      <init_from>Palette.jpg</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="World_ap_026-material" name="World ap.026">
+      <instance_effect url="#World_ap_026-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="Floor_4_1_001-mesh" name="Floor.4_1.001">
+      <mesh>
+        <source id="Floor_4_1_001-mesh-positions">
+          <float_array id="Floor_4_1_001-mesh-positions-array" count="48">-278.4197 3.72887e-4 -278.4197 -278.4197 17.08317 -278.4197 278.4197 17.08317 -278.4197 278.4197 3.72887e-4 -278.4197 278.4197 17.08317 278.4197 278.4197 3.72887e-4 278.4197 -278.4197 17.08317 278.4197 -278.4197 3.72887e-4 278.4197 -267.8397 12.72269 -267.8398 -267.8397 12.72269 267.8397 267.8397 12.72269 267.8397 267.8397 12.72269 -267.8398 -267.8397 17.08317 -267.8398 267.8397 17.08317 -267.8398 267.8397 17.08317 267.8397 -267.8397 17.08317 267.8397</float_array>
+          <technique_common>
+            <accessor source="#Floor_4_1_001-mesh-positions-array" count="16" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Floor_4_1_001-mesh-normals">
+          <float_array id="Floor_4_1_001-mesh-normals-array" count="24">0 0 -1 1 0 0 0 0 1 -1 0 0 0 1 0 0 -1 0 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Floor_4_1_001-mesh-normals-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Floor_4_1_001-mesh-map-0">
+          <float_array id="Floor_4_1_001-mesh-map-0-array" count="168">0.7852162 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.8684163 -0.7779968 0.8720008 -0.7815813 0.8684163 -0.7815813 0.7852162 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6115848 0.7852162 -0.6080003 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6115848 0.7852162 -0.6080003 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6115848 0.8684163 -0.7779968 0.8720008 -0.7779968 0.8720008 -0.7815813 0.7852162 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6115848 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6115848 0.7852162 -0.6115848 0.7852162 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6115848 0.7888007 -0.6080003 0.7888007 -0.6080003 0.7888007 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6080003 0.7852162 -0.6115848 0.7852162 -0.6115848</float_array>
+          <technique_common>
+            <accessor source="#Floor_4_1_001-mesh-map-0-array" count="84" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Floor_4_1_001-mesh-vertices">
+          <input semantic="POSITION" source="#Floor_4_1_001-mesh-positions"/>
+        </vertices>
+        <triangles material="World_ap_026-material" count="28">
+          <input semantic="VERTEX" source="#Floor_4_1_001-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Floor_4_1_001-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Floor_4_1_001-mesh-map-0" offset="2" set="0"/>
+          <p>1 0 0 3 0 1 0 0 2 2 1 3 5 1 4 3 1 5 4 2 6 7 2 7 5 2 8 6 3 9 0 3 10 7 3 11 9 4 12 11 4 13 8 4 14 0 5 15 5 5 16 7 5 17 12 4 18 2 4 19 1 4 20 13 4 21 4 4 22 2 4 23 14 4 24 6 4 25 4 4 26 15 4 27 1 4 28 6 4 29 8 2 30 13 2 31 12 2 32 11 3 33 14 3 34 13 3 35 10 0 36 15 0 37 14 0 38 9 1 39 12 1 40 15 1 41 1 0 42 2 0 43 3 0 44 2 1 45 4 1 46 5 1 47 4 2 48 6 2 49 7 2 50 6 3 51 1 3 52 0 3 53 9 4 54 10 4 55 11 4 56 0 5 57 3 5 58 5 5 59 12 6 60 13 6 61 2 6 62 13 4 63 14 4 64 4 4 65 14 7 66 15 7 67 6 7 68 15 4 69 12 4 70 1 4 71 8 2 72 11 2 73 13 2 74 11 3 75 10 3 76 14 3 77 10 0 78 9 0 79 15 0 80 9 1 81 8 1 82 12 1 83</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="floor_2" name="floor_2" type="NODE">
+        <matrix sid="transform">0.0897925 0 0 0 0 -2.04704e-9 -0.0897925 3.55271e-15 0 0.04683075 -3.92496e-9 -0.5 0 0 0 1</matrix>
+        <instance_geometry url="#Floor_4_1_001-mesh" name="floor_2">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="World_ap_026-material" target="#World_ap_026-material">
+                <bind_vertex_input semantic="UVMap" input_semantic="TEXCOORD" input_set="0"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>
